@@ -17,13 +17,13 @@ function printPrimeNumber() {
     let number = '';
     let count = 0;
 
-    for(let i = 0; i <= ipNumber; i++) {
-        if(checkPrime(i) == true) {
-            number += i;
+    for(let i = 0; count < ipNumber; i++) {
+        if(checkPrime(i)) {
+            number += i + '<br>';
             count++;
         }
     }
 
-    document.getElementById('primenumber').innerHTML = " " + number + " ";
+    document.getElementById('primenumber').innerHTML = number;
     document.getElementById('count').innerHTML = count;
 }
